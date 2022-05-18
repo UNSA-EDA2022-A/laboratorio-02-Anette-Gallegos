@@ -14,8 +14,15 @@ public class Exercise1 {
 		}
 	}
 
-	public boolean esCuadradoPerfecto(int numero) {
-
+	public boolean esCuadradoPerfecto(int numero){
+		if(numero == 0){
+			return false;
+		}else if(numero == 1){
+			return true;
+		}else{
+			esCuadradoPerfecto(numero/2);
+		}
+		
 		return false;
 	}
 }
